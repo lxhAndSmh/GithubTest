@@ -38,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
-        android:src="@mipmap/ic_launcher"
+        app:backgroundTint="@color/cffffff"
+        android:src="@mipmap/ic_done_black"
         />
 </android.support.design.widget.CoordinatorLayout>

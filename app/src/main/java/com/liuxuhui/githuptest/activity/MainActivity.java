@@ -4,22 +4,28 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.view.MenuItem;
 import android.view.Window;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.liuxuhui.githuptest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 public class MainActivity extends AppCompatActivity{
 
     @BindView(R.id.textView)
     TextView textView;
+    @BindView(R.id.drawer_layout)
+    DrawerLayout drawerLayout;
+    @BindView(R.id.navigation)
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,32 +33,53 @@ public class MainActivity extends AppCompatActivity{
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        initData();
     }
 
-    @OnClick({R.id.button1, R.id.button2, R.id.button3})
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.button1:
-                Intent intent = new Intent(MainActivity.this, BehaviorActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.button2:
-                intent = new Intent(MainActivity.this, TableLayoutActivity.class);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                }else {
-                    startActivity(intent);
-                }
-                break;
+    public void initData(){
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.button1:
+                        Intent intent = new Intent(MainActivity.this, BehaviorActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.button2:
+                        intent = new Intent(MainActivity.this, TableLayoutActivity.class);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                            startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                        } else {
+                            startActivity(intent);
+                        }
+                        break;
 
-            case R.id.button3:
-                intent = new Intent(MainActivity.this, CollapsingToolbarActivity.class);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                }else {
-                    startActivity(intent);
+                    case R.id.button3:
+                        intent = new Intent(MainActivity.this, CollapsingToolbarActivity.class);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                            startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                        } else {
+                            startActivity(intent);
+                        }
+                        break;
+                    case R.id.button4:
+                        Toast.makeText(MainActivity.this, "更多", Toast.LENGTH_SHORT).show();
+                        textView.setText("更多");
+                        break;
+                    case R.id.button5:
+                        Toast.makeText(MainActivity.this, "关于", Toast.LENGTH_SHORT).show();
+                        textView.setText("关于");
+                        break;
+                    case R.id.button6:
+                        Toast.makeText(MainActivity.this, "设置", Toast.LENGTH_SHORT).show();
+                        textView.setText("设置");
+                        break;
                 }
-                break;
-        }
+                item.setChecked(true);//改变item的选中状态
+                drawerLayout.closeDrawers();// 关闭导航菜单
+                return true;
+            }
+        });
     }
+
 }
