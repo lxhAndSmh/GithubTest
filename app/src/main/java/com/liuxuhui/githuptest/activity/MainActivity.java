@@ -17,7 +17,16 @@ import com.liuxuhui.githuptest.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
+/**
+* 项目名称：MainActivity
+* 类描述：Material之NavigationView导航的使用
+* 创建人：liuxuhui
+* 创建时间：2017/2/9 18:45
+* 修改人：liuxuhui
+* 修改时间：2017/2/9 18:45
+* 修改备注：
+* @version
+*/
 public class MainActivity extends AppCompatActivity{
 
     @BindView(R.id.textView)
