@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/button1"
+            android:checked="true"
+            android:icon="@mipmap/ic_favorite_border_black"
+            android:title="滑动渐隐" />
+
+        <item
+            android:id="@+id/button2"
+            android:icon="@mipmap/ic_person_black"
+            android:title="TAble_Layout" />
+
+        <item
+            android:id="@+id/button3"
+            android:icon="@mipmap/ic_help_outline_black"
+            android:title="可折叠的Toolbar" />
+
+        <item
+            android:id="@+id/button4"
+            android:icon="@mipmap/ic_more_horiz_black"
+            android:title="更多" />
+
+        <item
+            android:id="@+id/button5"
+            android:icon="@mipmap/ic_menu_black"
+            android:title="关于" />
+
+        <item
+            android:id="@+id/button6"
+            android:icon="@mipmap/ic_settings_black"
+            android:title="设置" />
+    </group>
+
+</menu>
