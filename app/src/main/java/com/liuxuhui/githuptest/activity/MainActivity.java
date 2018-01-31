@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity{
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        //nothing
+        //nothing for current
         initData();
     }
 
