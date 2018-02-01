@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity{
         ButterKnife.bind(this);
         //nothing for develop rebase
         //rebase one time
+        //rebase two time
         initData();
     }
 
