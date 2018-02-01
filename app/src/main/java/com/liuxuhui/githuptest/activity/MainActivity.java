@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity{
         //nothing for develop rebase
         //rebase one time
         //rebase two time
+        //merge one time
         initData();
     }
 
