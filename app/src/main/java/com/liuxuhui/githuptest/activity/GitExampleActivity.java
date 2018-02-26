@@ -21,11 +21,22 @@ public class GitExampleActivity extends AppCompatActivity {
 
     /**
      * 修改之前提交的commit中的错误代码
-     * git rebase -i [commit对应的SHA-1 码]
-     * git commit --amend
-     * git rebase --continue
+     * 1.git rebase -i [commit前一个对应的SHA-1 码]
+     * 2.在编辑界面将要修改的commit那一行中的pick改成edit，退出编辑界面
+     * 3.修改代码，然后操作git add .    和git commit --amend
+     * 4.git rebase --continue
      */
     private void amendCommit(){
+
+    }
+
+    /**
+     * 撤销某一次的commit
+     * 1.git rebase -i [要撤销的commit前一个commit对应的SHA-1 码]
+     * 2.在编辑界面删掉要撤销的那行commit
+     * 3.git rebase --continue
+     */
+    private void backoutCommit(){
 
     }
 }
