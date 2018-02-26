@@ -53,8 +53,10 @@ public class TableLayoutActivity extends AppCompatActivity {
     private void initView(){
         fragments = new ArrayList<>();
         list = new ArrayList<>();
-        toobar.setTitle("TableLayoutActivity");
-        toobar.setLogo(R.mipmap.ic_launcher);
+        toobar.setTitle("主标题TableLayoutActivity");
+        toobar.setSubtitle("副标题");
+//        toobar.setLogo(R.mipmap.ic);
+        toobar.setNavigationIcon(R.mipmap.ic_delete_black);
 
         //可滑动的
         tab.setTabMode(TabLayout.MODE_SCROLLABLE);
