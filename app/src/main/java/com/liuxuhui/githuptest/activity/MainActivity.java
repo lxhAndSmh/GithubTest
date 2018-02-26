@@ -55,6 +55,11 @@ public class MainActivity extends AppCompatActivity{
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        //nothing for develop rebase
+        //rebase one time
+        //rebase two time
+        //merge one time
+        //merge two time
         initData();
     }
 
