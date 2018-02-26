@@ -16,5 +16,16 @@ public class GitExampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_git_example);
         //修改刚提交的错误代码 git commit --amend
+        //修改之前提交的commit中的错误代码
+    }
+
+    /**
+     * 修改之前提交的commit中的错误代码
+     * git rebase -i [commit对应的节点]
+     * git commit --amend
+     * git rebase --continue
+     */
+    private void amendCommit(){
+
     }
 }
