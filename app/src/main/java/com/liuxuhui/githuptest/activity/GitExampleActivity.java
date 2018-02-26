@@ -16,6 +16,7 @@ public class GitExampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_git_example);
         //修改刚提交的错误代码 git commit --amend
+        //git reset --hard [commit对应的SHA-1码]
     }
 
     /**
