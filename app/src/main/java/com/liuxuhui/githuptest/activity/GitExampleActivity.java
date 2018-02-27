@@ -51,5 +51,4 @@ public class GitExampleActivity extends AppCompatActivity {
     }
     //最后一次舍弃
     //git revert HEAD^
-    //多余代码
 }
