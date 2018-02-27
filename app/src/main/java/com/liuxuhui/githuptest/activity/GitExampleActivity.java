@@ -49,6 +49,7 @@ public class GitExampleActivity extends AppCompatActivity {
     private void rebaseOnto(){
 
     }
+    //最后一次舍弃
     //git revert HEAD^
     //多余代码
 }
