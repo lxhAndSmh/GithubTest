@@ -39,4 +39,15 @@ public class GitExampleActivity extends AppCompatActivity {
     private void backoutCommit(){
 
     }
+
+    /**
+     * 撤销某一次的commit方式二
+     * git rebase --onto 目标commit  起点commit 终点commit
+     * 注意：rebase的时候会把目标commit（不包括目标commit自身）和起点commit（包括起点commit自身）之间的commit删除
+     * 例如：git rebase --onto 第三个commit 第4个commit branch
+     */
+    private void rebaseOnto(){
+
+    }
+    //最后一次舍弃
 }
