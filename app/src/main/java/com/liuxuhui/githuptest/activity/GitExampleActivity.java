@@ -50,4 +50,5 @@ public class GitExampleActivity extends AppCompatActivity {
 
     }
     //git revert HEAD^
+    //多余代码
 }
