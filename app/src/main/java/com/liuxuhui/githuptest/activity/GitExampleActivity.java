@@ -51,4 +51,12 @@ public class GitExampleActivity extends AppCompatActivity {
     }
     //最后一次舍弃
     //git revert HEAD^
+    /**
+     * git checkout的本质
+     * git checkout branch名 的本质，其实是把HEAD指向指定的branch，然后签出这个branch所对应的commit的工作目录。
+     * 所以同样的，checkout的目标也可以直接指定某个commit。（使用场景，切换一个指向某个指定的commit分支）
+     * 例如：1.git checkout b6c149 则直接HEAD指向当前b6c149commit的分支
+     *      2.git checkout -b 分支名
+     */
+
 }
