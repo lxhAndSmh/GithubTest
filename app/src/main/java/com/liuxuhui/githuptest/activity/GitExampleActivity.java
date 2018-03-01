@@ -49,8 +49,13 @@ public class GitExampleActivity extends AppCompatActivity {
     private void rebaseOnto(){
 
     }
-    //最后一次舍弃
-    //git revert HEAD^
+
+    /**g
+     * 代码已经push上去了才发现写错
+     * git revert 希望撤销的commit
+     * 就可以把远程仓库写错的commit撤销了（该命令执行后，会生成一个新的commit）
+     */
+
     /**
      * git stash 临时存放工作目录的改动
      * git stash pop
