@@ -68,4 +68,16 @@ public class GitExampleActivity extends AppCompatActivity {
      *      2.git checkout -b 分支名
      */
 
+    /**
+     * git cherry-pick 把选中的其它分支的commits合并到当前分支
+     * git cherry-pick <commit id> 单独合并某一个提交
+     * git cherry-pick -x <commit id> 单独合并某一个提交（同上，不同点：保留了原提交者的信息）
+     * git cherry-pick <start-commit-id>..<end-commit-id> 合并此区间的commits（左开右闭，不包含start-commit-id）到当前分支
+     * git cherry-pick <start-commit-id>^..<end-commit-id> 合并此区间的commits（左闭右闭）到当前分支
+     * 注：有冲突解决冲突
+     */
+
+    /**
+     * vim 文件路径  用编辑器打开某个文件
+     */
 }
