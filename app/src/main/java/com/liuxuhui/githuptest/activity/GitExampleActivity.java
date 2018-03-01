@@ -85,4 +85,14 @@ public class GitExampleActivity extends AppCompatActivity {
     /**
      * vim 文件路径  用编辑器打开某个文件
      */
+
+    /**
+     * Git如何切换远程仓库的地址
+     * 1.修改命令：git remote set-url origin url
+     * 2.先删后加：
+     * git remote rm origin
+     * git remote add origin url
+     * 3.修改config文件：
+     * 在项目的根目录下，查看隐藏的文件夹，找到.git文件夹下的config文件，就可以修改其中的git remote origin地址了
+     */
 }
