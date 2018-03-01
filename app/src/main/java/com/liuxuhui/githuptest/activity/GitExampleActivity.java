@@ -52,6 +52,15 @@ public class GitExampleActivity extends AppCompatActivity {
     //最后一次舍弃
     //git revert HEAD^
     /**
+     * git stash 临时存放工作目录的改动
+     * git stash pop
+     * 注意：没有被track的文件（即从没被add过的文件不会被stash起来，因为Git会忽略它们。
+     * 如果想把这些文件也一起stash，可以加上'-u'参数，它是'--include-untracked'的简写，
+     * 如下：git stash -u）
+     */
+
+    //编辑器添加
+    /**
      * git checkout的本质
      * git checkout branch名 的本质，其实是把HEAD指向指定的branch，然后签出这个branch所对应的commit的工作目录。
      * 所以同样的，checkout的目标也可以直接指定某个commit。（使用场景，切换一个指向某个指定的commit分支）
