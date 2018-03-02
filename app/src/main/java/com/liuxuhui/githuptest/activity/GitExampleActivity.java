@@ -95,4 +95,15 @@ public class GitExampleActivity extends AppCompatActivity {
      * 3.修改config文件：
      * 在项目的根目录下，查看隐藏的文件夹，找到.git文件夹下的config文件，就可以修改其中的git remote origin地址了
      */
+
+    /**
+     * 合并分支git rebase的使用
+     * 使用merge之后，commit历史就会出现分叉，如果不希望commit历史出现分叉，可以使用rebase代替merge
+     * rebase  是在新位置重新提交
+     * 例如：将develop分支合并到master分支
+     * 1.git checkout develop（确保当前分支是develop，是的话就不需要此次切换）
+     * 2.git rebase master
+     * 3.git checkout master(切换到master分支)
+     * 4.git merge develop(把master移到最新的commit)
+     */
 }
