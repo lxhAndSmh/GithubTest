@@ -106,4 +106,6 @@ public class GitExampleActivity extends AppCompatActivity {
      * 3.git checkout master(切换到master分支)
      * 4.git merge develop(把master移到最新的commit)
      */
+
+    //回滚单一文件
 }
