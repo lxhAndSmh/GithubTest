@@ -15,9 +15,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"
             >
-
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
@@ -35,6 +34,8 @@
         android:background="@color/cffffff"
         app:layout_behavior="com.liuxuhui.githuptest.behaviors.FooterSamplerBehavior"
         >
+        <!-- 内容滑动，底部和头部一起隐藏或出现，使用下面的自定义behavior，头部的ToolBar要设置属性app:layout_scrollFlags-->
+        <!--app:layout_behavior="com.liuxuhui.githuptest.behaviors.FooterSamplerBehaviorDependAppbar"-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -5,10 +5,15 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +40,14 @@ public class MainActivity extends AppCompatActivity{
     DrawerLayout drawerLayout;
     @BindView(R.id.navigation)
     NavigationView navigationView;
+    @BindView(R.id.textInputLayout)
+    TextInputLayout inputLayout;
+    @BindView(R.id.textInputEditText)
+    TextInputEditText inputEditText;
+    @BindView(R.id.textInputEditText1)
+    TextInputEditText inputEditText1;
+    @BindView(R.id.editText)
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +107,30 @@ public class MainActivity extends AppCompatActivity{
                 return true;
             }
         });
+
+        inputEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(s.length() > 4){
+                    inputLayout.setErrorEnabled(true);
+                    inputLayout.setError("姓名不能超过四个字" + s.length());
+                }else {
+                    inputLayout.setErrorEnabled(false);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+        inputEditText1.setHint("请输入地址");
     }
 
 }
