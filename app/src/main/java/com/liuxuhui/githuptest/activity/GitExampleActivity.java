@@ -109,12 +109,6 @@ public class GitExampleActivity extends AppCompatActivity {
 
     //回滚单一文件
 
-    /**
-     * 合并分支git merge的使用
-     * 例如：将develop分支合并到master分支
-     * 1.git checkout master 切换到master分支
-     * 2.git merge develop （默认情况下，Git执行“快进式合并”（fast-farwardmerge），会直接将master分支指向develop分支）；
-     * 建议使用git merge develop --no-ff,这样会在执行正常合并后，并在master分支上生成一个新的节点，为了保证版本演进的清晰，建议使用这种做法。
-     *
-     */
+
+    
 }
