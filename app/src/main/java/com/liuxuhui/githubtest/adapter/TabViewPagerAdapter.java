@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.adapter;
+package com.liuxuhui.githubtest.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

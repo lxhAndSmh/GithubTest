@@ -1,9 +1,9 @@
-package com.liuxuhui.githuptest.activity;
+package com.liuxuhui.githubtest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.liuxuhui.githuptest.R;
+import com.liuxuhui.githubtest.R;
 
 /**
  * Created by liuxuhui on 2018/2/26 16:07

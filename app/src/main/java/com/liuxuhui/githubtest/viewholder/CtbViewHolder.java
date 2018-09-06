@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.viewholder;
+package com.liuxuhui.githubtest.viewholder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

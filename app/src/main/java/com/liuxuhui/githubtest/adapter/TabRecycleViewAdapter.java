@@ -1,12 +1,12 @@
-package com.liuxuhui.githuptest.adapter;
+package com.liuxuhui.githubtest.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.liuxuhui.githuptest.R;
-import com.liuxuhui.githuptest.viewholder.TabViewHolder;
+import com.liuxuhui.githubtest.R;
+import com.liuxuhui.githubtest.viewholder.TabViewHolder;
 
 import java.util.List;
 

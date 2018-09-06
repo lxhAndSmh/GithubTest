@@ -1,10 +1,10 @@
-package com.liuxuhui.githuptest.viewholder;
+package com.liuxuhui.githubtest.viewholder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.liuxuhui.githuptest.R;
+import com.liuxuhui.githubtest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

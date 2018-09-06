@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.activity;
+package com.liuxuhui.githubtest.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.liuxuhui.githuptest.R;
-import com.liuxuhui.githuptest.adapter.TabRecycleViewAdapter;
+import com.liuxuhui.githubtest.R;
+import com.liuxuhui.githubtest.adapter.TabRecycleViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

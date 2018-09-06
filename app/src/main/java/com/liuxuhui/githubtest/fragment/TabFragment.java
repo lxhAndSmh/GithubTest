@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.fragment;
+package com.liuxuhui.githubtest.fragment;
 
 
 import android.content.Context;
@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.liuxuhui.githuptest.R;
-import com.liuxuhui.githuptest.adapter.TabRecycleViewAdapter;
+import com.liuxuhui.githubtest.R;
+import com.liuxuhui.githubtest.adapter.TabRecycleViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

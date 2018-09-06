@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.behaviors;
+package com.liuxuhui.githubtest.behaviors;
 
 import android.animation.Animator;
 import android.content.Context;

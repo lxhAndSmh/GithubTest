@@ -5,7 +5,7 @@
     android:id="@+id/activity_table_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.liuxuhui.githuptest.activity.TableLayoutActivity">
+    tools:context="com.liuxuhui.githubtest.activity.TableLayoutActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

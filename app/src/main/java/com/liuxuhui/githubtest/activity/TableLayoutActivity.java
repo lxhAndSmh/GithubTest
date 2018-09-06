@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.activity;
+package com.liuxuhui.githubtest.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -9,9 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.liuxuhui.githuptest.R;
-import com.liuxuhui.githuptest.adapter.TabViewPagerAdapter;
-import com.liuxuhui.githuptest.fragment.TabFragment;
+import com.liuxuhui.githubtest.R;
+import com.liuxuhui.githubtest.adapter.TabViewPagerAdapter;
+import com.liuxuhui.githubtest.fragment.TabFragment;
 
 import java.util.ArrayList;
 import java.util.List;

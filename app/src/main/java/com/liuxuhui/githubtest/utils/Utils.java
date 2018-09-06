@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.utils;
+package com.liuxuhui.githubtest.utils;
 
 /**
  * Created by liuxuhui on 2018/2/28.

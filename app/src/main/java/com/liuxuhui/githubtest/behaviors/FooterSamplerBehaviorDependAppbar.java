@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.behaviors;
+package com.liuxuhui.githubtest.behaviors;
 
 import android.content.Context;
 import android.support.design.widget.AppBarLayout;

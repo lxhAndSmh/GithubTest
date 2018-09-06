@@ -1,4 +1,4 @@
-package com.liuxuhui.githuptest.activity;
+package com.liuxuhui.githubtest.activity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.liuxuhui.githuptest.R;
+import com.liuxuhui.githubtest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -96,9 +96,13 @@ public class MainActivity extends AppCompatActivity{
                         Toast.makeText(MainActivity.this, "设置", Toast.LENGTH_SHORT).show();
                         textView.setText("设置");
                         break;
+                    default:
+                        break;
                 }
-                item.setChecked(true);//改变item的选中状态
-                drawerLayout.closeDrawers();// 关闭导航菜单
+                //改变item的选中状态
+                item.setChecked(true);
+                // 关闭导航菜单
+                drawerLayout.closeDrawers();
                 return true;
             }
         });
