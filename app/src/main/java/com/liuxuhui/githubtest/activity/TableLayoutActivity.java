@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
-* 项目名称：TableLayoutActivity
+* 项目名称：GithubTest
 * 类描述：AppBarLayout嵌套TabLayout的使用
 * 创建人：liuxuhui
 * 创建时间：2017/2/7 15:02

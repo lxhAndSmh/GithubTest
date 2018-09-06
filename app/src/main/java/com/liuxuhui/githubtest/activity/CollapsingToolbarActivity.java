@@ -13,7 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-* 项目名称：CollapsingToolbarActivity
+* 项目名称：GithubTest
 * 类描述：随着视图滑动可折叠的ToolBar
 * 创建人：liuxuhui
 * 创建时间：2017/2/8 17:41

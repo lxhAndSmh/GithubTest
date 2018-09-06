@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-* 项目名称：BehaviorActivity
+* 项目名称：GithubTest
 * 类描述：CoordinatorLayout与Behavior实现仿知乎的嵌套滑动和渐隐效果
 * 创建人：liuxuhui
 * 创建时间：2017/2/7 10:50

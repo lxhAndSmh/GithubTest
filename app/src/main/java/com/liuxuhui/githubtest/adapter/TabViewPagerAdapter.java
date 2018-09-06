@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.List;
 
 /**
- * 项目名称：GithupTest
+ * 项目名称：GithubTest
  * 类描述：
  * 创建人：user
  * 创建时间：2017/2/7 17:08

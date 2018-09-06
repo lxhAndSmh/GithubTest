@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 项目名称：GithupTest
+ * 项目名称：GithubTest
  * 类描述：自定义Behavior，仿简书滑动隐藏头部的底部，全屏效果
  * 创建人：liuxuhui
  * 创建时间：2017/2/10 11:15

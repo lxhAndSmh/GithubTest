@@ -11,7 +11,7 @@ import android.view.ViewPropertyAnimator;
 import android.view.animation.Interpolator;
 
 /**
- * 项目名称：GithupTest
+ * 项目名称：GithubTest
  * 类描述：自定义Behavior，底部随内容滑动显示或隐藏
  * 创建人：liuxuhui
  * 创建时间：2017/2/9 18:59
@@ -32,13 +32,13 @@ public class FooterSamplerBehavior extends CoordinatorLayout.Behavior<View> {
 
     //判断滑动的方向 我们需要垂直滑动
     @Override
-    public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, View child, View directTargetChild, View target, int nestedScrollAxes) {
+    public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, View child, View directTargetChild, View target, int nestedScrollAxes, int type) {
         return (nestedScrollAxes & ViewCompat.SCROLL_AXIS_VERTICAL) != 0;
     }
 
     //根据滑动的距离显示和隐藏footer view
     @Override
-    public void onNestedPreScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dx, int dy, int[] consumed) {
+    public void onNestedPreScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dx, int dy, int[] consumed, int type) {
         if(dy > 0 && sinceDirectionChange < 0 || dy <0 && sinceDirectionChange > 0){
             child.animate().cancel();
             sinceDirectionChange = 0;
@@ -46,7 +46,7 @@ public class FooterSamplerBehavior extends CoordinatorLayout.Behavior<View> {
         sinceDirectionChange += dy;
         if(sinceDirectionChange > child.getHeight() && child.getVisibility() == View.VISIBLE){
             hide(child);
-        }else if(sinceDirectionChange < 0 && child.getVisibility() == View.GONE){
+        }else if(sinceDirectionChange < 0 && child.getVisibility() == View.INVISIBLE){
             show(child);
         }
     }
@@ -61,7 +61,7 @@ public class FooterSamplerBehavior extends CoordinatorLayout.Behavior<View> {
 
             @Override
             public void onAnimationEnd(Animator animation) {
-                view.setVisibility(View.GONE);
+                view.setVisibility(View.INVISIBLE);
             }
 
             @Override

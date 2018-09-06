@@ -11,7 +11,7 @@ import com.liuxuhui.githubtest.viewholder.TabViewHolder;
 import java.util.List;
 
 /**
- * 项目名称：GithupTest
+ * 项目名称：GithubTest
  * 类描述：TabFragment的RecycleView适配器
  * 创建人：liuxuhui
  * 创建时间：2017/2/8 10:01

@@ -23,7 +23,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-* 项目名称：MainActivity
+* 项目名称：GithubTest
 * 类描述：Material之NavigationView导航的使用
 * 创建人：liuxuhui
 * 创建时间：2017/2/9 18:45
