@@ -72,7 +72,7 @@ $ git reflog   可以查看命令历史，包含提交的commit id
 - 5.git push <分支名>分支名分支 提交到远程
 
 ## 显示提交的状态
-git status
+git status  
 已经添加，等待提交事务的文件(绿色字体表示)；已经改变但是没有添加(not staged)的文件(红色字体表示)
 
 ## 列出diff的结果
@@ -82,7 +82,7 @@ git commit --verbose
 git log
 
 ## 查询该文件和git仓库中的文件的区别，即做了什么修改
-git diff <文件全称>
+git diff <文件全称>  
 如果已经add了，就打印不出有什么修改了，这一步骤应该在add之前，即添加之前可以用来看看做了什么修改。
 
 ## 忽略文件
@@ -99,27 +99,25 @@ git diff <文件全称>
 - $ Git tag # 在控制台打印出当前仓库的所有标签
 - $ git tag -l ‘v0.1.*’ # 搜索符合模式的标签
 ### 打标签
-git标签分为两种类型：轻量标签和附注标签。轻量标签是指向提交对象的引用，附注标签则是仓库中的一个独立对象。建议使用附注标签。
-### 创建轻量标签
-$ git tag v0.1.2-light
-### 创建附注标签
-$ git tag -a v0.1.2 -m “0.1.2版本”
-创建轻量标签不需要传递参数，直接指定标签名称即可。  创建附注标签时，参数a即annotated的缩写，指定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中。
+git标签分为两种类型：轻量标签和附注标签。轻量标签是指向提交对象的引用，附注标签则是仓库中的一个独立对象。建议使用附注标签。  
+创建轻量标签不需要传递参数，直接指定标签名称即可。创建附注标签时，参数a即annotated的缩写，指定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中。
+- 创建轻量标签  $ git tag v0.1.2-light  
+- 创建附注标签  $ git tag -a v0.1.2 -m “0.1.2版本”  
 ### checkout TAG的内容
 与切换分支命令相同 git checkout -b 分支名 tag名
-### 查看标签信息
-$ git show v0.1.2
+### 查看标签信息  
+$ git show v0.1.2  
 用git show命令可以查看标签的版本信息
 ### 删除标签
-误打或需要修改标签时，需要先将标签删除，再打新标签。
-$ git tag -d v0.1.2 删除标签
+误打或需要修改标签时，需要先将标签删除，再打新标签。  
+$ git tag -d v0.1.2 删除标签  
 参数d即delete的缩写，意为删除其后指定的标签。
 ### 给指定的commit打标签
-打标签不必要在head之上，也可在之前的版本上打，这需要你知道某个提交对象的校验和（通过git log获取）。
+打标签不必要在head之上，也可在之前的版本上打，这需要你知道某个提交对象的校验和（通过git log获取）。  
 $ git tag -a v0.1.1 9fbc3d0
 ### 标签发布
-通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作：
-$ git push origin v0.1.2 # 将v0.1.2标签提交到git服务器
+通常的git push不会将标签对象提交到git服务器，我们需要进行显式的操作:  
+$ git push origin v0.1.2 # 将v0.1.2标签提交到git服务器  
 $ git push origin –tags # 将本地所有标签一次性提交到git服务器
   ##### 注意：如果想看之前某个标签状态下的文件，可以这样操作
   - 1.git tag   查看当前分支下的标签
@@ -127,9 +125,9 @@ $ git push origin –tags # 将本地所有标签一次性提交到git服务器
   - 3.cat  test.txt   查看某个文件
 
 ## 处理无法commit,版本被锁
-git commit -m 发现提示
-Another git process seems to be running in this repository, e.g. an editor opened by 'git commit'. Please make sure all processes are terminated then try again. If it still fails, a git process may have crashed in this repository earlier:remove the file manually to continue.
-大致意思就是你已经提交一了一个commit，该进程卡在这里了，所以无法继续提交。
+git commit -m 发现提示  
+Another git process seems to be running in this repository, e.g. an editor opened by 'git commit'. Please make sure all processes are terminated then try again. If it still fails, a git process may have crashed in this repository earlier:remove the file manually to continue.  
+大致意思就是你已经提交一了一个commit，该进程卡在这里了，所以无法继续提交。  
 使用$ rm -f ./.git/index.lock 命令，结束该进程。即可继续提交。
 
 ## 一些常用的git高级命令
