@@ -93,10 +93,6 @@ git diff <文件全称>
 - 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件，数据库密码
 - 所以需要在项目的根目录下创建一个名称为.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。不需要从头写.gitignore文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。
 
-## 无法commit时
-因为你已经提交一了一个commit，该进程卡在这里了，所以无法继续提交。
-rm -f ./.git/index.lock 命令，结束该进程。
-
 ## 标签
 标签可以针对某一时间点的版本做标记，常用于版本发布。
 ### 列出标签
@@ -130,7 +126,7 @@ $ git push origin –tags # 将本地所有标签一次性提交到git服务器
   - 2.git  checkout v0.21   此时会指向打v0.21标签时的代码状态，（但现在处于一个空的分支上）
   - 3.cat  test.txt   查看某个文件
 
-## 处理无法commit,版本版本被锁
+## 处理无法commit,版本被锁
 git commit -m 发现提示
 Another git process seems to be running in this repository, e.g. an editor opened by 'git commit'. Please make sure all processes are terminated then try again. If it still fails, a git process may have crashed in this repository earlier:remove the file manually to continue.
 大致意思就是你已经提交一了一个commit，该进程卡在这里了，所以无法继续提交。
