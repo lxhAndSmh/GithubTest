@@ -85,7 +85,12 @@ public class MainActivity extends AppCompatActivity{
                         }
                         break;
                     case R.id.button4:
-                        Toast.makeText(MainActivity.this, "更多", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, ExampleActivity.class);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                            startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                        } else {
+                            startActivity(intent);
+                        }
                         textView.setText("更多");
                         break;
                     case R.id.button5:

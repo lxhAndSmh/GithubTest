@@ -17,7 +17,8 @@
         <activity android:name=".activity.BehaviorActivity" />
         <activity android:name=".activity.TableLayoutActivity" />
         <activity android:name=".activity.CollapsingToolbarActivity" />
-        <activity android:name=".activity.GitExampleActivity"></activity>
+        <activity android:name=".activity.GitExampleActivity" />
+        <activity android:name=".activity.ExampleActivity"></activity>
     </application>
 
 </manifest>
