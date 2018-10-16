@@ -7,7 +7,52 @@
     tools:context=".activity.ExampleActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="对象的浅复制和深复制"/>
+        android:text="对象的浅复制和深复制"
+        app:layout_constraintBottom_toTopOf="@+id/btn_copy_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_copy_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浅复制"
+        app:layout_constraintBottom_toTopOf="@+id/btn_copy_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btn_copy_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="深复制"
+        app:layout_constraintBottom_toTopOf="@+id/btn_copy_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_copy_1" />
+
+    <Button
+        android:id="@+id/btn_copy_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过字节流深复制"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_copy_2"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_copy_3" />
 </android.support.constraint.ConstraintLayout>

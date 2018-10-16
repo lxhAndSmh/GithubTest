@@ -1,9 +1,8 @@
-package com.liuxuhui.githubtest.activity;
+package com.liuxuhui.githubtest.bean;
 
 
 import com.google.gson.annotations.SerializedName;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,7 +14,16 @@ public class Student implements Cloneable{
     private int age;
     private String name;
 
-    Teacher teacher;
+    private Teacher teacher;
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
     private List<String> num;
 
     public int getAge() {
@@ -43,7 +51,7 @@ public class Student implements Cloneable{
     }
 
     @Override
-    protected Object clone(){
+    public Object clone(){
         Student student = null;
         try {
             student = (Student) super.clone();
@@ -63,12 +71,18 @@ public class Student implements Cloneable{
                 ", num=" + num +
                 '}';
     }
-    class Teacher implements Cloneable{
-        int age;
+    public class Teacher implements Cloneable{
+        public int age;
 
         @Override
-        protected Object clone() throws CloneNotSupportedException {
-            return super.clone();
+        public Object clone() {
+            Teacher teacher = null;
+            try {
+                teacher = (Teacher) super.clone();
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
+            return teacher;
         }
     }
 }
